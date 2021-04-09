@@ -13,16 +13,37 @@ with open(input_path) as file:
     reader = csv.reader(file, delimiter=',')
 
     # initialize variables
-    vote_count = []
-    vote_percent = []
+
     vote_total = 0
+    vote_percent = []
     candidate = []
-    winner = []
+    candidate_vote_count = []
+    candidate_winner = []
 
     for column in reader:
-        vote_count.append(column[0])
+        candidate_vote_count.append(column[0])
         candidate.append(column[2])
 
-        vote_total = (len(vote_count))
+        vote_total = (len(candidate_vote_count))
 
-        print(vote_total)
+    # calculate vote count per candidate
+    correy_vote_count = candidate.count('Correy')
+    li_vote_count = candidate.count('Li')
+    khan_vote_count = candidate.count('Khan')
+    o_tooley_vote_count = candidate.count("O'Tooley")
+
+    # calculate vote % per candidate
+    correy_vote_percent = correy_vote_count / vote_total
+    li_vote_percent = li_vote_count / vote_total
+    Khan_vote_percent = khan_vote_count / vote_total
+    o_tooley_vote_percent = o_tooley_vote_count / vote_total
+
+
+    print('Election Results')
+    print('-------------------------')
+    print(f'Total Votes:{vote_total:,}')
+    print('-------------------------')
+
+
+
+

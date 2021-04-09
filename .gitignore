@@ -33,3 +33,5 @@ Desktop.ini
 .DS_Store.idea
 
 **/*.log
+.ipynb_checkpoints
+**/*.ipynb_checkpoints

@@ -3,7 +3,6 @@ import csv
 import os
 
 # define paths
-
 input_path = os.path.join('Resources', 'election_data.csv')
 output_path = os.path.join('Analysis', 'poll_results.txt')
 
@@ -13,7 +12,6 @@ with open(input_path) as file:
     reader = csv.reader(file, delimiter=',')
 
     # initialize variables
-
     vote_total = 0
     vote_percent = []
     candidate = []

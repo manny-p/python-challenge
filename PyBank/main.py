@@ -53,4 +53,20 @@ decrease = f'Greatest Decrease in Profits: {decrease_date} (${min_profits_delta:
 
 print('Financial Analysis', separator, tm, tpl, dm, increase, decrease, sep='\n')
 
+with open(output, 'w') as text_file:
+    print('Financial Analysis', separator, tm, tpl, dm, increase, decrease, sep='\n', file=text_file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

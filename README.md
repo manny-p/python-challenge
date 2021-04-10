@@ -1,6 +1,6 @@
 # python-challenge
 
-PyBank
+## PyBank
 Create a script to analyze financial records, calculate following:
 
 - total number of months included in the dataset
@@ -9,7 +9,7 @@ Create a script to analyze financial records, calculate following:
 - greatest increase in profits (date and amount) over the entire period
 - greatest decrease in losses (date and amount) over the entire period
 
-PyPoll 
+## PyPoll 
 Create a script to analyze election results, calculate following:
 
 - total number of votes cast
